@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "pm2:start": "pm2 start server.js --name whatsapp-bot",
+    "pm2:stop": "pm2 stop whatsapp-bot",
+    "pm2:restart": "pm2 restart whatsapp-bot",
+    "pm2:logs": "pm2 logs whatsapp-bot"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "@hapi/boom": "^10.0.1",
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "pino": "^8.17.2",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
