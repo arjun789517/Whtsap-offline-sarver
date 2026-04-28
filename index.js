@@ -1,21 +1,12 @@
-import express from 'express';
-import fs from 'fs';
-import chalk from 'chalk';
-import multer from 'multer';
-import makeWASocket, { 
-    useMultiFileAuthState, 
-    makeCacheableSignalKeyStore, 
-    DisconnectReason, 
-    Browsers, 
-    fetchLatestBaileysVersion 
-} from '@whiskeysockets/baileys';
-import pino from 'pino';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import crypto from 'crypto';
-import { Boom } from '@hapi/boom';
-import cors from 'cors';
-import qrcode from 'qrcode-terminal';
+const express = require('express');
+const fs = require('fs');
+const chalk = require('chalk');
+const multer = require('multer');
+const makeWASocket = require('@whiskeysockets/baileys');
+const pino = require('pino');
+const path = require('path');
+const crypto = require('crypto');
+const cors = require('cors');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
